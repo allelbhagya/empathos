@@ -169,3 +169,69 @@ pre {
 footer {
   margin-block-start: var(--space-xl-2xl);
 }
+
+
+nav {
+  background-color: #f0f0f0;
+  padding: 10px;
+  overflow: hidden; /* Clear the float */
+}
+
+/* CSS for navigation links */
+.navbar-link {
+  float: right; /* Float the links to the right */
+  margin-left: 10px; /* Add some space between navigation links */
+  text-decoration: none; /* Remove underlines from the links */
+  color: #333; /* Set the color of the links */
+  background-color: transparent; /* Set initial background as transparent */
+  padding: 5px 10px; /* Add some padding to the links */
+  border-radius: 5px; /* Round the corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect */
+}
+
+/* CSS for navigation links when hovered */
+.navbar-link:hover {
+  background-color: hsl(321, 96%, 60%); /* Set background color on hover */
+  color: white; /* Set text color to white on hover */
+}
+
+/* CSS for the logo image */
+.logo-image {
+  float: left; /* Float the image to the left */
+  width: 45px; /* Adjust the width as per your requirement */
+  height: auto; /* Keeps the aspect ratio of the image */
+}
+
+nav{
+  font-family: var(--font-base);
+  font-weight: var(--font-weight-bold);
+  background-color: #f0f0f0;
+  padding: 10px;
+  overflow: hidden; /* Clear the float */
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Stick it to the top of the viewport */
+  left: 0; /* Align it to the left edge of the viewport */
+  width: 100%; /* Make the navbar full-width */
+  z-index: 1000; /* Set a high z-index to ensure it's always on top */
+}
+
+/* CSS for dark mode */
+.dark-mode {
+  background-color: #333; /* Set dark background color */
+  color: white; /* Set text color for dark mode */
+}
+
+
+.share-button {
+  font-family: var(--font-base);
+  font-weight: var(--font-weight-bold);
+  background-color: hsl(207, 100%, 43%);
+  padding: 10px;
+  border-radius: 30px; /* Round the corners */
+  cursor: pointer; /* Change cursor on hover */
+  color: #fff; /* White text color */
+}
+
+.share-button:hover {
+  background-color: hsl(207, 100%, 60%); /* Slightly darker color on hover */
+}
