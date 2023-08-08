@@ -1,60 +1,91 @@
 ---
-import Layout from "../layouts/Layout.astro";
+// import { getCollection } from "astro:content";
+import PageLayout from "@/layouts/Base";
+// import PostPreview from "@/components/blog/PostPreview";
+// import SocialList from "@/components/SocialList";
+// import { sortMDByDate } from "@/utils";
+
+
+// const MAX_POSTS = 10;
+// const allPosts = await getCollection("post");
+// const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+
+// const cactusTech: Array<{ title: string; desc: string; href: string }> = [
+//   {
+//     title: "Astro",
+//     desc: "Build fast websites, faster.",
+//     href: "https://astro.build",
+//   },
+//   {
+//     title: "Astro Assets",
+//     desc: "Built-in optimized asset support.",
+//     href: "https://docs.astro.build/en/guides/assets/",
+//   },
+//   {
+//     title: "Tailwind CSS",
+//     desc: "Rapidly build modern websites without ever leaving your HTML.",
+//     href: "https://tailwindcss.com",
+//   },
+//   {
+//     title: "Markdown",
+//     desc: "Simple and easy-to-use markup language.",
+//     href: "https://www.markdownguide.org/",
+//   },
+//   {
+//     title: "MDX",
+//     desc: "Markdown for the component era.",
+//     href: "https://mdxjs.com/",
+//   },
+//   {
+//     title: "Satori",
+//     desc: "Generating png Open Graph images for blog posts.",
+//     href: "https://github.com/vercel/satori",
+//   },
+//   {
+//     title: "Pagefind",
+//     desc: "A fully static search library.",
+//     href: "https://pagefind.app/",
+//   },
+// ];
 ---
 
-<Layout title="empathos">
-  <main>
-    <article class="region prose wrapper hero">
-      <h1>empathos<a href="#">;</a></h1>
-
-      <h2>
-        make your <a href="#">mental</a> health a priority
-      </h2>
-    </article>
-
-    <article class="region prose wrapper">
-      <ul role="list" class="grid features">
-        <li class="flow">
-          <h3>how does it work?</h3>
-          <p
-            >welcome to empathos, a platform dedicated to promoting mental
-            well-being and providing support for individuals facing mental
-            health challenges. the mission is to create a safe space where you
-            can find valuable resources and access support that empowers you on
-            your journey to mental wellness.</p
-          >
-        </li>
-
-        <li class="flow">
-          <h3>share your story;</h3>
-          <p
-            >we believe in the power of personal narratives to inspire and
-            uplift others. if you have a story of resilience, recovery, or
-            overcoming mental health challenges, we encourage you to share it
-            with our community.</p
-          >
-          <button class="share-button">submit</button>
-        </li>
-        <li class="flow">
-          <h3>blogs and resources</h3>
-          <p
-            >the blog section is a rich resource hub for mental health
-            information, self-improvement tips, and inspiring stories.whether
-            you're looking for tips on managing stress, coping with anxiety, or
-            understanding mental health conditions, our blog is your go-to
-            destination for reliable information.</p
-          >
-        </li>
-
-        <li class="flow">
-          <h3>beep boop?</h3>
-          <p
-            >sign up for our newsletter and receive regular updates on events,
-            new resources, and exclusive content. stay informed and be the first
-            to know about exciting announcements.</p
-          >
-        </li>
-      </ul>
-    </article>
-  </main>
-</Layout>
+<PageLayout meta={{ title: "Home" }}>
+  <section>
+    <h1 class="title mb-6">make your mental health a priority</h1>
+    <p class="mb-4"> </p>
+    <!-- <SocialList />
+  </section>
+  <section aria-label="Blog post list" class="mt-16">
+    <h2 class="title mb-4 text-xl">Posts</h2>
+    <ul class="space-y-4 sm:space-y-2">
+      {
+        allPostsByDate.map((p) => (
+          <li class="flex flex-col gap-x-2 sm:flex-row">
+            <PostPreview post={p} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+  <section class="mt-16">
+    <h2 class="title mb-4 text-xl">Technologies</h2>
+    <ul class="space-y-4 sm:space-y-2">
+      {
+        cactusTech.map(({ href, title, desc }) => (
+          <li>
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cactus-link inline-block"
+            >
+              {title}
+            </a>
+            :<p class="inline-block sm:mt-2">{desc}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section> -->
+  </section>
+</PageLayout>
