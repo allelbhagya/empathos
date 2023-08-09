@@ -1,7 +1,5 @@
 ---
 import PageLayout from "@/layouts/Base";
-// import { Image } from "astro:assets";
-// import aboutImg from "~/assets/about-astro.png";
 
 const meta = {
   title: "About",
@@ -10,42 +8,22 @@ const meta = {
 ---
 
 <PageLayout meta={meta}>
-  <h1 class="title">about page</h1>
-  <!-- <div class="space-y-6">
-		<h1 class="title">About</h1>
-		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
-		</p>
-		<div class="flex justify-center">
-			<Image
-				src={aboutImg}
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
-				loading="eager"
-				fetchpriority="high"
-			/>
-		</div>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
-		<p>
-			Clone or fork my
-			<a
-				class="cactus-link inline-block"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="github repository"
-			>
-				repo
-			</a> if you like me!
-		</p>
-	</div> -->
+  <div class="space-y-6">
+    <h1 class="title" style="font-size: 2rem;">about us</h1>
+    <p style="font-size: 1rem;">
+      welcome to <span style="color: rgb(151, 66, 225);">empathos</span>
+      <br /><br />
+      your trusted source for comprehensive and compassionate mental health support.
+      we understand that navigating the complexities of mental well-being can be
+      challenging, and that's why we're here to offer you a guiding light on your
+      journey towards emotional wellness.
+      <br /><br />
+      at empathos, we firmly believe that everyone deserves to lead a fulfilling
+      and balanced life. our mission is to provide you with a safe and inclusive
+      space where you can find the information, resources, and encouragement you
+      need to nurture your mental health. whether you're seeking guidance for yourself
+      or a loved one, we're dedicated to helping you foster resilience, cope with
+      challenges, and ultimately, thrive.
+    </p>
+  </div>
 </PageLayout>
